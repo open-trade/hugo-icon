@@ -6,6 +6,7 @@
       <p>{{ .message | markdownify }}</p>
       {{ end }}
     </div>
+    {{ with .Site.Params.contact }}{{ if isset . "button_text" }}
     <form name="contact-form" netlify-honeypot="_gotcha" action="thank-you" netlify>
       <div class="row">
 	<div class="col-md-6">
@@ -42,5 +43,6 @@
       </div>
 
     </form>
+    {{end}}{{end}}
   </div>
 </div>
