@@ -14,6 +14,10 @@
     <div class="fh5co-page">
       <div id="fh5co-container">
 	
+<div class="nav-top-logo">
+	{{ with .Site.Params.nav }}<img src={{ .logo | absURL }} height="30" alt="">{{end}}
+</div>
+
 	{{ partial "hero.html" . }}
 	
 	{{ partial "nav.html" . }}
