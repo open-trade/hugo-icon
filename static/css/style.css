@@ -419,7 +419,6 @@ p {
 @media screen and (max-width: 480px) {
   .fh5co-grid .fh5co-grid-item {
     width: 100%;
-    height: 200px !important;
   }
 }
 
@@ -1239,6 +1238,85 @@ div#fh5co-offcanvas a:first-child {
     top: 0;
     width: 100%;
     z-index: 1;
+}
+
+div.fh5co-grid .fh5co-grid-item {
+  position: relative;
+}
+
+div.fh5co-grid .fh5co-grid-item:before {
+    -moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.85;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+}
+
+div.fh5co-grid .fh5co-grid-item:first-child:before {
+  background-color: #6fc3df;
+}
+
+div.fh5co-grid .fh5co-grid-item:nth-child(2):before {
+  background-color: #8d82c4;
+}
+
+div.fh5co-grid .fh5co-grid-item:nth-child(3):before {
+  background-color: #ec8d81;
+}
+
+div.fh5co-grid .fh5co-grid-item:nth-child(4):before {
+  background-color: #e7b788;
+}
+
+div.fh5co-grid .fh5co-grid-item:nth-child(5):before {
+  background-color: #8ea9e8;
+}
+
+div.fh5co-grid .fh5co-grid-item:nth-child(6):before {
+  background-color: #87c5a4;
+}
+
+div.fh5co-grid .fh5co-grid-item:hover:before {
+  opacity: 0;
+}
+
+header.major {
+  margin: 100px 60px;
+  position: relative;
+  z-index: 3;
+  width: -moz-max-content;
+  width: -webkit-max-content;
+  width: -ms-max-content;
+  width: max-content;
+  margin-bottom: 2em;
+  color: #fff;
+}
+
+header.major h3 {
+  color: #fff;
+  font-size: 1.75em;
+}
+
+header.major > :first-child {
+  margin-bottom: 0;
+  width: calc(100% + 0.5em);
+}
+
+header.major > :first-child:after {
+  content: '';
+  background-color: #ffffff;
+  display: block;
+  height: 2px;
+  margin: 0.325em 0 0.5em 0;
+  width: 100%;
 }
 
 /* .equal { */

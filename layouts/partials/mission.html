@@ -34,7 +34,14 @@
     <div class="fh5co-grid">
       {{ if .Site.Params.mission.images.enable }}
       {{ range .Site.Params.mission.images.list }}
-      <div class="fh5co-grid-item" style="background-image: url({{ with .img }}{{ . | absURL }}{{ end }});"></div>
+      <div class="fh5co-grid-item" style="background-image: url({{ with .img }}{{ . | absURL }}{{ end }});">
+	      {{ if isset . "text" }}
+	      <header class="major">
+		<h3>{{ .text | markdownify }}</h3>
+		{{ if isset . "subtext" }}<p>{{ .subtext | markdownify }}</p>{{ end }}
+	      </header>
+	      {{ end }}
+      </div>
       {{ end }}
       {{ end }}
       
