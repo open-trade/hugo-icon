@@ -72,6 +72,7 @@ p {
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #54B30E !important;
+  border-color: #54B30E !important;
 }
 
 .btn-primary.btn-outline {
