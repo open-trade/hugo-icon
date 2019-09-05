@@ -69,10 +69,11 @@ p {
   color: #fff;
   border: 2px solid #54B30E;
 }
+
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #56bac1 !important;
-  border-color: #56bac1 !important;
+  background: #54B30E !important;
 }
+
 .btn-primary.btn-outline {
   background: transparent;
   color: #54B30E;
@@ -87,10 +88,6 @@ p {
   background: #58ca7e;
   color: #fff;
   border: 2px solid #58ca7e;
-}
-.btn-success:hover, .btn-success:focus, .btn-success:active {
-  background: #45c46f !important;
-  border-color: #45c46f !important;
 }
 .btn-success.btn-outline {
   background: transparent;
