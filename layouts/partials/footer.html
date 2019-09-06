@@ -34,3 +34,15 @@
     </div>
   </div>
 </div>
+
+{{ with .Site.Params.footer }}
+{{ if isset . "ga" }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ .ga }}"></script>
+<script>
+	window.dataLayer=window.dataLayer||[];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js',new Date());
+	gtag('config','UA-123745636-1');
+</script>
+{{ end }}
+{{ end }}
