@@ -24,7 +24,7 @@ a {
   transition: 0.5s;
 }
 a:hover, a:focus, a:active {
-  color: #3da1a7;
+  color: #54B30E;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1311,6 +1311,10 @@ header.major > :first-child:after {
   height: 2px;
   margin: 0.325em 0 0.5em 0;
   width: 100%;
+}
+
+div.service p {
+  text-align: left;
 }
 
 /* .equal { */
